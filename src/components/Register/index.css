@@ -1,0 +1,173 @@
+/* Container */
+.card-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 420px;
+  text-align: left;
+  height: 100vh;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+/* Input fields */
+.input[type='text'],
+.input[type='tel'],
+.input[type='email'],
+.input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #6a0dad;
+}
+
+/* Radio group */
+div {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  margin-right: 6px;
+  accent-color: #6a0dad;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  background-color: #6a0dad;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5800a3;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+}
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.required-star {
+  color: red;
+  margin-left: 2px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-option {
+  font-size: 14px;
+  color: #000;
+  display: flex;
+}
+
+.radio-option input[type='radio'] {
+  accent-color: #6a0dad;
+  margin-right: 6px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.floating-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-label input {
+  width: 100%;
+  padding: 16px 12px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: none;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  color: #999;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background-color: white;
+  padding: 0 4px;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #6a0dad;
+}
+
+/* Fix background overlap issue */
+.floating-label input:focus {
+  border-color: #6a0dad;
+}

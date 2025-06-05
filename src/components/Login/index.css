@@ -1,0 +1,79 @@
+.card-container {
+  max-width: 320px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  height: 100vh;
+}
+.heading {
+  width: 50%;
+}
+.heading {
+  color: #1d1d1f;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.description {
+  color: #888;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: left;
+}
+.form-field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #6c25ff;
+  font-weight: 500;
+  z-index: 1;
+}
+
+input {
+  width: 100%;
+  padding: 16px 14px 12px;
+  padding-top: 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6c25ff;
+}
+
+button.active {
+  background-color: #6c25ff;
+  cursor: pointer;
+}
+
+button.active:hover {
+  background-color: #5a1ad9;
+}
+
+/* Optional: Show error state */
+.error {
+  border-color: #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  display: block;
+}
