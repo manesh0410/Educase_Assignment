@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# 🚀 React Authentication App (PopX Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive React-based user authentication app that mimics basic functionality similar to PopX. It allows users to register, log in, and view their account details — all handled on the client side using `localStorage`.
 
-## Available Scripts
+Built with **React** and **React Router v6**, the app includes route protection, form validation, and a clean UI. Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+---
+
+### ✅ Live Demo
+
+🔗 [Click here to view the deployed app](https://educase-assignment-alpha-ten.vercel.app/)
+
+## 📦 Features
+
+- 🧾 User Registration with Email and Name
+- 🔐 Login with Email & Password
+- 📄 Account Page for Logged-in Users
+- 💾 LocalStorage for user persistence
+- 🛑 404 Not Found Page
+- 🎯 Basic Form Validations
+- 🧭 Smooth routing with React Router v6
+
+---
+
+## 🚀 Getting Started
+
+These instructions will help you set up the project on your local machine for development and testing.
+
+### 🔧 Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- npm (comes with Node.js)
+
+---
+
+## 📁 Project Structure
+
+popx-auth-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Account.js
+│ │ ├── Login.js
+│ │ ├── NotFound.js
+│ │ ├── Register.js
+│ │ └── Welcome.js
+│ ├── App.js
+│ ├── index.js
+│ └── index.css
+├── package.json
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 🛠️ Installation
+
+Clone the repository and install dependencies:
+
+git clone https://github.com/manesh0410/Educase_Assignment
+cd popx-auth-app
+npm install
+🚦 Running the App
+To start the development server:
+
+bash
+Copy
+Edit
+npm start
+This will run the app in development mode.
+Open http://localhost:3000 to view it in the browser.
+
+The page will automatically reload if you make edits.
+
+📌 Application Routes
+Route	Component	Description
+/	Welcome	Home screen with navigation
+/register	Register	Sign up new user
+/login	Login	Login for registered users
+/account	Account	Shows user details after login
+*	NotFound	Fallback 404 page
+
+💾 How It Works
+Registration saves name, email, and password to localStorage.
+
+Login checks stored credentials and redirects to /account.
+
+Account displays user data fetched from localStorage.
+
+No backend/API is involved. All data is managed client-side.
+
+📜 Scripts
 In the project directory, you can run:
 
-### `npm start`
+npm start
+Runs the app in development mode.
+Open http://localhost:3000 in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm test
+Launches the test runner (if implemented).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm run build
+Builds the app for production to the build/ folder.
+It bundles React in production mode and optimizes the build.
 
-### `npm test`
+npm run eject
+Note: This is a one-way operation. You cannot undo it.
+Use only if you need full control over the build configuration.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📚 Learn More
+React Documentation
 
-### `npm run build`
+React Router Documentation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create React App Docs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔒 Disclaimer
+This project is for educational purposes only.
+Since there’s no backend or encryption, it is not production-ready.
+Passwords and user info are stored in plaintext in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👨‍💻 Author
+Manesh Kumar
+[MERN Stack Developer]
+Email: chmaneshkumar2002@gmail.com
+GitHub: https://github.com/manesh0410
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
